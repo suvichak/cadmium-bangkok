@@ -65,7 +65,7 @@
             line.setMap(map);
 
             // Draw circles around the Cadmium location
-            var circleColors = ['#32CD32', '#ADFF2F', '#FFFF00', '#FFA500', '#FF6347', '#FF4500', '#FF0000'];
+            var circleColors = ['#FFCCCC', '#FF9999', '#FF6666', '#FF3333', '#FF0000', '#CC0000', '#990000'];
             var circleRadii = [100, 200, 500, 1000, 2000, 5000, 10000]; // in meters
             for (var i = 0; i < circleRadii.length; i++) {
                 new google.maps.Circle({
@@ -85,6 +85,7 @@
 <body>
     <div id="map"></div>
     <div id="distance"></div>
-    <div id="small-text">Distance from your location to Cadmium</div>
+    <div id="small-text">ระยะทางระหว่างคุณกับโรงงานแคดเมียมที่เป็นข่าว</div>
+    <div id="small-text">https://cadmium-bangkok.vercel.app/ </div>
 </body>
 </html>
