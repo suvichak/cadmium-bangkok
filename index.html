@@ -97,14 +97,16 @@
 
             } else {
                 console.log('Geolocation is not supported by this browser.');
+                document.getElementById('distance').innerText = 'เข้าถึง location service ไม่ได้';
+
             }
         }
     </script>
 </head>
 
-<body>
+<body  onload="initMap()" >
     <div id="map"></div>
-    <div id="distance"></div>
+    <div id="distance">คำนวนระยะทางอยู่ โปรดให้สิทธิเข้าถึงโลเคขั่น</div>
     <div id="small-text">ระยะทางระหว่างคุณกับโรงงานแคดเมียมที่เป็นข่าว</div>
     <div id="small-text">https://cadmium-bangkok.vercel.app/ </div>
     ติดตามข่าว
